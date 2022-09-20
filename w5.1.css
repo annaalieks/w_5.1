@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Ogg";
+    src:  url("fonts/OggLight.woff2") format("woff2"),
+          url("fonts/OggLight.woff") format("woff"),
+          url("fonts/OggLight.otf") format("opentype"),
+          url("fonts/OggLight.ttf") format("truetype");
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    font-display: fallback; 
+}
+
+@font-face {
+    font-family: "Ogg";
+    src:  url("fonts/OggLightItalic.woff2") format("woff2"),
+          url("fonts/OggLightItalic.woff") format("woff"),
+          url("fonts/OggLightItalic.otf") format("opentype"),
+          url("fonts/OggLightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: fallback; 
+}
+
+ @font-face {
+    font-family: "Trade Gothic LT Extended";
+    src:  url("fonts/Trade Gothic LT Extended.woff2") format("woff2"),
+          url("fonts/Trade Gothic LT Extended.woff") format("woff"),
+          url("fonts/Trade Gothic LT Extended.otf") format("opentype"),
+          url("fonts/Trade Gothic LT Extended.ttf") format("truetype");
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-display: fallback;      
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}  
+
+body {
+    margin: 0;
+    font-family: "Ogg", system-ui;
+}
+
+.container {
+    width: 90%;
+    min-width: 280px;
+    margin: 50px auto 50px;
+}
+
+.desctop {
+    display: none;
+}
+
+.line-height-special {
+    font-family: "Trade Gothic LT Extended", system-ui;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0 0 50px;
+    min-width: 280px;
+}
+
+p.stylization {
+    color: #71870E;
+    opacity: 0.85;
+    min-width: 320px;
+    margin: 0;
+}
+
+input::placeholder,
+select {
+    appearance: none;
+    font-family: inherit;
+    color: #C4C4C4;
+    opacity: 0.7;
+}
+
+input[placeholder],
+select {
+    border: none;
+    font-family: "Trade Gothic LT Extended", system-ui;
+    padding-top: 20px;
+    width: 100%;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+.flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.subscription {
+    padding-top: 50px;
+}
+
+input[type="submit"] {
+    appearance: none;
+    font-family: "Trade Gothic LT Extended", system-ui;
+    color: #D0A049;
+    background: none;
+    border: none;
+}
+
+.submit-btn {
+    text-align: center;
+    padding-top: 44px;
+}
+
+.form-fields {
+    border-bottom: 1px;
+    max-width: 605px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 605px;
+        width: 42%;
+        margin: 200px auto 175px;
+    }
+
+    sup.desctop {
+        opacity: 0.55;
+        position: absolute;
+        left: -191px;
+        display: inline-block;
+    }
+
+    h2 {
+        font-size: 60px;
+        line-height: 64px;
+        min-width: 400px;
+        position: relative;
+        margin: 0 0 100px;
+    }
+
+    p.stylization {
+        max-width: 419px;
+        float: right;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: "";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        clear: both;
+        *zoom: 1;
+    }
+
+}   

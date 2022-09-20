@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Mullaert</title>
+    <link rel="stylesheet" href="w5.1.css">
+</head>
+<body>
+    <section class="form container">
+        <h2><sup class="desctop line-height-special">(Booking)</sup> Send <em>an email</em></h2>
+        <div class="clearfix">
+            <p class="stylization line-height-special">
+                If you have a general or project enquiry, please drop me an email — available now
+            </p>
+        </div>
+        <form action="result.html" method="get" target="_blank">
+            <div class="form-fields">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
+            <div class="form-fields">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-fields">
+                <label for="message">Message</label><br>
+                <input type="text" name="message" id="message" placeholder="Start typing here" required>
+            </div>
+            <div class="form-fields">
+                <label for="project-type">Project type</label><br>
+                <div class="flex">
+                    <select name="project-type" id="project-type" required>
+                        <option class="placeholder-option" value="" disabled selected>Choose</option>
+                        <option value="reserve-for-personal-event">Reserve for personal event</option>
+                        <option value="buy-tickets-for-a-next-concert">Buy tickets for a next concert</option>
+                        <option value="reserve-for-a-venue">Reserve from a venue</option>
+                        <option value="other">Other</option>          
+                    </select>
+                    <img src="img/Vector.svg" alt="Arrow">
+                </div>
+            </div>
+            <div class="subscription">
+                <label>
+                    <input type="checkbox" name="newsletter-subscription">
+                    I agree to receive ocasional newsletter with latest news and updates
+                </label>
+            </div>
+            <div class="submit-btn">
+                <img alt="Dash" src="img/—.svg" width="96">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </section> 
+</body>
+</html>
