@@ -84,16 +84,14 @@ select {
     opacity: 0.7;
 }
 
-input[placeholder],
-select {
+.form-stylization {
     border: none;
     font-family: "Trade Gothic LT Extended", system-ui;
     padding-top: 20px;
     width: 100%;
 }
 
-input:focus,
-select:focus {
+.no-outline:focus{
     outline: none;
 }
 
@@ -169,5 +167,4 @@ input[type="submit"] {
         clear: both;
         *zoom: 1;
     }
-
 }   
